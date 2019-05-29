@@ -18,3 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Routes employee
+Route::get('create', function(){
+  return view('employee.create_user');
+})->name('register_user');
+
+Route::get('accounts', function(){
+  return view('employee.accounts');
+})->name('accounts_user');
