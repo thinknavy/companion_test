@@ -77,7 +77,7 @@
 
   <!-- Nav Item - Charts -->
   <li class="nav-item">
-    <a class="nav-link" href="charts.html">
+    <a class="nav-link" href="{{ route('setting_emp') }}">
       <i class="fas fa-cogs"></i>
       <span>Settings</span></a>
   </li>

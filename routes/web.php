@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('employee/index');
+})->middleware('auth');
 
 Auth::routes();
 
@@ -27,3 +27,7 @@ Route::get('create', function(){
 Route::get('accounts', function(){
   return view('employee.accounts');
 })->name('accounts_user');
+
+Route::get('setting', function(){
+  return view('employee.settings');
+})->name('setting_emp');

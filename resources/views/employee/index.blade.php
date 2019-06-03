@@ -1,4 +1,5 @@
 @extends('layouts.emp')
+@section('title', 'Dashboard')<!--title-->
 @section('content')
 <!-- Begin Page Content -->
 <div class="container-fluid">
