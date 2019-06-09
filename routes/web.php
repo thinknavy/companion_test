@@ -31,3 +31,7 @@ Route::get('accounts', function(){
 Route::get('setting', function(){
   return view('employee.settings');
 })->name('setting_emp');
+
+Route::get('tickets', function(){
+  return view('employee.tickets');
+})->name('tickets_get');

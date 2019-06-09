@@ -1,0 +1,14 @@
+/* user-rig card-body */
+
+.user-rig .card-body .sreach-in{
+  color: #fff;
+  border-color: #1cc88a;
+  background-color: #1cc88a;
+}
+
+.tickets .card-body .ticket-search{
+  display: -webkit-box;
+  width: 33%;
+  height: 100%;
+  font-size: 15px;
+}
