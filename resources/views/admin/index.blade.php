@@ -1,4 +1,4 @@
-@extends('layouts.emp')
+@extends('layouts.admin')
 @section('title', 'Dashboard')<!--title-->
 @section('content')
 <!-- Begin Page Content -->

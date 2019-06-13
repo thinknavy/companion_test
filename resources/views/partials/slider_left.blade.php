@@ -36,8 +36,8 @@
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
-        <a class="collapse-item" href="{{ route('register_user') }}">Create User</a>
-        <a class="collapse-item" href="{{ route('accounts_user') }}">Accounts</a>
+        <a class="collapse-item" href="#">Create User</a>
+        <a class="collapse-item" href="#">Accounts</a>
       </div>
     </div>
   </li>
@@ -51,7 +51,7 @@
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <a class="collapse-item" href="utilities-color.html">Create</a>
-        <a class="collapse-item" href="{{ route('tickets_get') }}">Tickets</a>
+        <a class="collapse-item" href="{{route('tickets')}}">Tickets</a>
       </div>
     </div>
   </li>
@@ -77,7 +77,7 @@
 
   <!-- Nav Item - Charts -->
   <li class="nav-item">
-    <a class="nav-link" href="{{ route('setting_emp') }}">
+    <a class="nav-link" href="#">
       <i class="fas fa-cogs"></i>
       <span>Settings</span></a>
   </li>

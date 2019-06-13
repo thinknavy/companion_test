@@ -12,26 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('employee/index');
+    return view('admin.tickets.tickets');
 })->middleware('auth');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//Routes employee
-Route::get('create', function(){
-  return view('employee.create_user');
-})->name('register_user');
+//Routes admin
 
-Route::get('accounts', function(){
-  return view('employee.accounts');
-})->name('accounts_user');
+Route::get('admin/getTickets','ticketsController@getTickets')->name('getTickets');
+Route::post('admin/resultTickets','ticketsController@resultTickets')->name('resultTickets');
 
-Route::get('setting', function(){
-  return view('employee.settings');
-})->name('setting_emp');
-
-Route::get('tickets', function(){
-  return view('employee.tickets');
-})->name('tickets_get');
+Route::get('admin/tickets', function(){
+  return view('admin.tickets.tickets');
+})->name('tickets');

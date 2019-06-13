@@ -15,8 +15,13 @@ class CreateTicketsTable extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title',100);
-            $table->enum('type',['Electricity','Water','Garage','Elevator']);
+            $table->string('ticket_type',100); //type of ticket
+            $table->text('desc'); //description
+            $table->text('free_day'); //free day *ex sun,sat
+            $table->enum('status',['seen','unseen']); // status for seen or unseen
+            $table->string('username'); // username-employee
+            $table->integer('bul_no'); // building number
+            $table->integer('apr_no'); // apertment number
             $table->timestamps();
         });
     }
